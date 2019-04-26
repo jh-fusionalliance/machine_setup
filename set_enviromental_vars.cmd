@@ -12,7 +12,7 @@ setx JAVA_HOME "C:\Program Files\Java\jdk1.8.0_latest"
 setx MAVEN_HOME "D:\tools\apache-maven-3.2.5"
 setx WAS_HOME "D:\tools\IBM\WebSphere\85\AppServer"
 
-%MAVEN_HOME%\bin;%WAS_HOME%\bin;
+setx "PATH=%PATH%;%MAVEN_HOME%\bin;%WAS_HOME%\bin"
 
 
 
