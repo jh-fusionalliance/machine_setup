@@ -139,7 +139,7 @@ function  InstallAdditional-Softwares {
         Write-Output "Stage: Installing Intellij IDE`n"
         Write-Output "=================================`n"
 
-        choco install intellijidea-community -y
+        choco update intellijidea-community -y
 
         Write-Output "=================================`n"
         Write-Output "Stage: Intellij IDE Installation complete. `n"
@@ -154,7 +154,7 @@ function  InstallAdditional-Softwares {
         Write-Output "Stage: Installing Db Visualizer`n"
         Write-Output "=================================`n"
 
-        choco install db-visualizer -y
+        choco update db-visualizer -y
 
         Write-Output "===========================================`n"
         Write-Output "Stage: Db Visualizer Installation complete. `n"
@@ -169,7 +169,7 @@ function  InstallAdditional-Softwares {
         Write-Output "Stage: Installing NotepadPlusPlus   `n"
         Write-Output "=================================`n"
 
-        choco install notepadplusplus.install -y
+        choco update notepadplusplus.install -y
 
         Write-Output "===========================================`n"
         Write-Output "Stage: NotepadPlusPlus Installation complete. `n"
@@ -184,7 +184,7 @@ function  InstallAdditional-Softwares {
         Write-Output "Stage: Installing Postman   `n"
         Write-Output "=================================`n"
 
-        choco install postman -y
+        choco update postman -y
 
         Write-Output "===========================================`n"
         Write-Output "Stage: Postman Installation complete. `n"
@@ -199,15 +199,15 @@ function Install-Packages {
     Write-Output "Stage: Installing packages`n"
     Write-Output "==========================`n"
 
-    choco install git -y
-    choco install nodejs --version 10.14.2 -y
-    choco install nvm -y
-    choco install adoptopenjdk8jre -y
-    choco install gradle --version 5.0 -y
-    choco install yarn -y
-    choco install eclipse --version 4.9 -y
-    choco install vscode -y
-    choco install python -y
+    choco update git -y
+    choco update nodejs --version 10.14.2 -y
+    choco update nvm -y
+    choco update adoptopenjdk8jre -y
+    choco update gradle --version 5.0 -y
+    choco update yarn -y
+    choco update eclipse --version 4.9 -y
+    choco update vscode -y
+    choco update python -y
 
     If(-Not $installed) {
         Write-Output "===========================================`n"
