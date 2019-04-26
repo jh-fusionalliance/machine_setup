@@ -199,15 +199,15 @@ function Install-Packages {
     Write-Output "Stage: Installing packages`n"
     Write-Output "==========================`n"
 
-    cinst git -y
-    cinst nodejs --version 10.14.2 -y
-    cinst nvm -y
-    cinst adoptopenjdk8jre -y
-    cinst gradle --version 5.0 -y
-    cinst yarn -y
-    cinst eclipse --version 4.9 -y
-    cinst vscode -y
-    cinst python -y
+    choco install git -y
+    choco install nodejs --version 10.14.2 -y
+    choco install nvm -y
+    choco install adoptopenjdk8jre -y
+    choco install gradle --version 5.0 -y
+    choco install yarn -y
+    choco install eclipse --version 4.9 -y
+    choco install vscode -y
+    choco install python -y
 
     If(-Not $installed) {
         Write-Output "===========================================`n"
@@ -229,15 +229,15 @@ function Uninstall-Packages {
     Write-Output "Stage: Uninstalling packages`n"
     Write-Output "============================`n"
 
-    cuninst git -y
-    cuninst nodejs --version 10.14.2 -y
-    cuninst nvm -y
-    cuninst adoptopenjdk8jre -y
-    cuninst gradle --version 5.0 -y
-    cuninst yarn -y
-    cuninst eclipse --version 4.9 -y
-    cuninst vscode -y
-    cuninst python -y
+    choco uninstall git -y
+    choco uninstall nodejs --version 10.14.2 -y
+    choco uninstall nvm -y
+    choco uninstall adoptopenjdk8jre -y
+    choco uninstall gradle --version 5.0 -y
+    choco uninstall yarn -y
+    choco uninstall eclipse --version 4.9 -y
+    choco uninstall vscode -y
+    choco uninstall python -y
 }
 
 function RunInstallAdditionalSoftwares {
